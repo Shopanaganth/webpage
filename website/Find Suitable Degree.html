@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <title>Find Suitable Degree</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+            background: linear-gradient(270deg, #6bffc1, #f8f9fa, #6b6bff,#6bf3ff);
+            background-size: 600% 600%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #343a40;
+        }
+        label {
+            color: #495057;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Find Your Suitable Degree</h1>
+        <form id="degree-form">
+            <div class="form-group">
+                <label for="district">Select Your District:</label>
+                <select class="form-control" id="district" name="district" required>
+                    <option value="">-Select District-</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Galle">Galle</option>
+                    <option value="Matara">Matara</option>
+                    <option value="Hambantota">Hambantota</option>
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Kilinochchi">Kilinochchi</option>
+                    <option value="Mannar">Mannar</option>
+                    <option value="Vavuniya">Vavuniya</option>
+                    <option value="Mullaitivu">Mullaitivu</option>
+                    <option value="Batticaloa">Batticaloa</option>
+                    <option value="Ampara">Ampara</option>
+                    <option value="Trincomalee">Trincomalee</option>
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="Puttalam">Puttalam</option>
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Polonnaruwa">Polonnaruwa</option>
+                    <option value="Badulla">Badulla</option>
+                    <option value="Monaragala">Monaragala</option>
+                    <option value="Ratnapura">Ratnapura</option>
+                    <option value="Kegalle">Kegalle</option>
+                    <option value="Nuwara Eliya">Nuwara Eliya</option>
+                    <option value="Matale">Matale</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="subject1">Select Subject 1:</label>
+                <select class="form-control" id="subject1" name="subject1" required>
+                    <option value="">-Select Subject-</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Agricultural Science">Agricultural Science</option>
+                    <option value="Agro Technology">Agro Technology</option>
+                    <option value="Art">Art</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Bio-Resource Technology">Bio-Resource Technology</option>
+                    <option value="Bio System Technology">Bio System Technology</option>
+                    <option value="Business Statistics">Business Statistics</option>
+                    <option value="Business Studies">Business Studies</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Buddhist Civilization">Buddhist Civilization</option>
+                    <option value="Carnatic Music">Carnatic Music</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Christian Civilization">Christian Civilization</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Civil Technology">Civil Technology</option>
+                    <option value="Communication & Media Studies">Communication & Media Studies</option>
+                    <option value="Combined Mathematics">Combined Mathematics</option>
+                    <option value="Dancing (Indigeneous)">Dancing (Indigeneous) </option>
+                    <option value="Dancing (Bharata)">Dancing (Bharata) </option>
+                    <option value="Drama and Theatre (Sinhala)">Drama and Theatre (Sinhala)</option>
+                    <option value="Drama and Theatre (Tamil)">Drama and Theatre (Tamil)</option>
+                    <option value="Drama and Theatre (English)">Drama and Theatre (English)</option> 
+                    <option value="Economics">Economics</option>
+                    <option value="Electrical,Electronic and Information Technology">Electrical,Electronic and Information Technology</option>
+                    <option value="Engineering Technology">Engineering Technology</option>
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Food Technology">Food Technology</option>
+                    <option value="Geography">Geography</option>
+                    <option value="German">German</option> 
+                    <option value="Greek and Roman Civilization">Greek and Roman Civilization</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Hindu Civilization">Hindu Civilization</option>
+                    <option value="Hinduism">Hindusim</option>
+                    <option value="History of India">History of India</option>
+                    <option value="History of Europe">History of Europe</option>
+                    <option value="History of Morden World">History of Morden World</option>
+                    <option value="Home Economics">Home Economics</option>
+                    <option value="Higher Mathematics">Higher Mathematics</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Islam Civilization">Islam Civilization</option>
+                    <option value="Information & Communication Technology">Information & Communication Technology</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Logic and Scientific Method">Logic and Scientific Method</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Mechanical Technology">Mechanical Technology</option>
+                    <option value="Malay">Malay</option>
+                    <option value="Oriental Music">Oriental Music</option>
+                    <option value="Pali">Pali</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Political Science">Political Science</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Science for Technology">Science for Technology </option>
+                    <option value="Sanskrit">Sanskrit</option>
+                    <option value="Sinhala">Sinhala</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Western Music">Western Music</option>    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="subject2">Select Subject 2:</label>
+                <select class="form-control" id="subject2" name="subject2" required>
+                    <option value="">-Select Subject-</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Agricultural Science">Agricultural Science</option>
+                    <option value="Agro Technology">Agro Technology</option>
+                    <option value="Art">Art</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Bio-Resource Technology">Bio-Resource Technology</option>
+                    <option value="Bio System Technology">Bio System Technology</option>
+                    <option value="Business Statistics">Business Statistics</option>
+                    <option value="Business Studies">Business Studies</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Buddhist Civilization">Buddhist Civilization</option>
+                    <option value="Carnatic Music">Carnatic Music</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Christian Civilization">Christian Civilization</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Civil Technology">Civil Technology</option>
+                    <option value="Communication & Media Studies">Communication & Media Studies</option>
+                    <option value="Combined Mathematics">Combined Mathematics</option>
+                    <option value="Dancing (Indigeneous)">Dancing (Indigeneous) </option>
+                    <option value="Dancing (Bharata)">Dancing (Bharata) </option>
+                    <option value="Drama and Theatre (Sinhala)">Drama and Theatre (Sinhala)</option>
+                    <option value="Drama and Theatre (Tamil)">Drama and Theatre (Tamil)</option>
+                    <option value="Drama and Theatre (English)">Drama and Theatre (English)</option> 
+                    <option value="Economics">Economics</option>
+                    <option value="Electrical,Electronic and Information Technology">Electrical,Electronic and Information Technology</option>
+                    <option value="Engineering Technology">Engineering Technology</option>
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Food Technology">Food Technology</option>
+                    <option value="Geography">Geography</option>
+                    <option value="German">German</option> 
+                    <option value="Greek and Roman Civilization">Greek and Roman Civilization</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Hindu Civilization">Hindu Civilization</option>
+                    <option value="Hinduism">Hindusim</option>
+                    <option value="History of India">History of India</option>
+                    <option value="History of Europe">History of Europe</option>
+                    <option value="History of Morden World">History of Morden World</option>
+                    <option value="Home Economics">Home Economics</option>
+                    <option value="Higher Mathematics">Higher Mathematics</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Islam Civilization">Islam Civilization</option>
+                    <option value="Information & Communication Technology">Information & Communication Technology</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Logic and Scientific Method">Logic and Scientific Method</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Mechanical Technology">Mechanical Technology</option>
+                    <option value="Malay">Malay</option>
+                    <option value="Oriental Music">Oriental Music</option>
+                    <option value="Pali">Pali</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Political Science">Political Science</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Science for Technology">Science for Technology </option>
+                    <option value="Sanskrit">Sanskrit</option>
+                    <option value="Sinhala">Sinhala</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Western Music">Western Music</option>    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="subject3">Select Subject 3:</label>
+                <select class="form-control" id="subject3" name="subject3" required>
+                    <option value="">-Select Subject-</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Agricultural Science">Agricultural Science</option>
+                    <option value="Agro Technology">Agro Technology</option>
+                    <option value="Art">Art</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Bio-Resource Technology">Bio-Resource Technology</option>
+                    <option value="Bio System Technology">Bio System Technology</option>
+                    <option value="Business Statistics">Business Statistics</option>
+                    <option value="Business Studies">Business Studies</option>
+                    <option value="Buddhism">Buddhism</option>
+                    <option value="Buddhist Civilization">Buddhist Civilization</option>
+                    <option value="Carnatic Music">Carnatic Music</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Christian Civilization">Christian Civilization</option>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Civil Technology">Civil Technology</option>
+                    <option value="Communication & Media Studies">Communication & Media Studies</option>
+                    <option value="Combined Mathematics">Combined Mathematics</option>
+                    <option value="Dancing (Indigeneous)">Dancing (Indigeneous) </option>
+                    <option value="Dancing (Bharata)">Dancing (Bharata) </option>
+                    <option value="Drama and Theatre (Sinhala)">Drama and Theatre (Sinhala)</option>
+                    <option value="Drama and Theatre (Tamil)">Drama and Theatre (Tamil)</option>
+                    <option value="Drama and Theatre (English)">Drama and Theatre (English)</option> 
+                    <option value="Economics">Economics</option>
+                    <option value="Electrical,Electronic and Information Technology">Electrical,Electronic and Information Technology</option>
+                    <option value="Engineering Technology">Engineering Technology</option>
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Food Technology">Food Technology</option>
+                    <option value="Geography">Geography</option>
+                    <option value="German">German</option> 
+                    <option value="Greek and Roman Civilization">Greek and Roman Civilization</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Hindu Civilization">Hindu Civilization</option>
+                    <option value="Hinduism">Hindusim</option>
+                    <option value="History of India">History of India</option>
+                    <option value="History of Europe">History of Europe</option>
+                    <option value="History of Morden World">History of Morden World</option>
+                    <option value="Home Economics">Home Economics</option>
+                    <option value="Higher Mathematics">Higher Mathematics</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Islam Civilization">Islam Civilization</option>
+                    <option value="Information & Communication Technology">Information & Communication Technology</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Logic and Scientific Method">Logic and Scientific Method</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Mechanical Technology">Mechanical Technology</option>
+                    <option value="Malay">Malay</option>
+                    <option value="Oriental Music">Oriental Music</option>
+                    <option value="Pali">Pali</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Political Science">Political Science</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Science for Technology">Science for Technology </option>
+                    <option value="Sanskrit">Sanskrit</option>
+                    <option value="Sinhala">Sinhala</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Western Music">Western Music</option>    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zscore">Enter Your Z-score:</label>
+                <input type="number" class="form-control" id="zscore" name="zscore" step="-4.001" min="-4.000" max="4.000" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Find Degrees</button>
+        </form>
+        <div id="result">
+            <!-- Suitable degrees will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

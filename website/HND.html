@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="icon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Sri Lankan Government Universities and Courses</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  /* Custom CSS for Animation and Design */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #efe0f7, #000000, #a3a4a7, #67736f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    color: #761f35 !important;
+    font-weight: bold;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .navbar-nav .dropdown-item {
+    color: #8bd6e2 !important;
+  }
+
+  h1, h2 {
+    color: #020202;
+  }
+
+  h1 {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .custom-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 7px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 2px 1px;
+        cursor: pointer;
+        border-radius: 6px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .more-content {
+            display: none; /* Hide the content initially */
+            margin-top: 10px;
+        }
+        
+        /* Stylish button */
+        .show-more-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .show-more-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .show-more-btn:focus {
+            outline: none;
+        }
+        .find-degree-tab {
+    background-color: #ff9800; /* Orange background */
+    color: #ffffff !important; /* White text */
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .find-degree-tab:hover {
+    background-color: #e68900; /* Darker orange on hover */
+    color: #fff !important;
+  }
+
+  </style>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="IC.jpg" alt="Logo" loading="lazy" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">🏡Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownA/L Streams" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              📖A/L Streams
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownA/L Streams">
+              <a class="dropdown-item" href="Arts.html">📖Arts</a>
+              <a class="dropdown-item" href="commerce.html">📖Commerce</a>
+              <a class="dropdown-item" href="Bio System Technology.html">📖Bio System Technology</a>
+              <a class="dropdown-item" href="Engineering Technology.html">📖Engineering Technology</a>
+              <a class="dropdown-item" href="Physical Science Stream.html">📖Physical Science</a>
+              <a class="dropdown-item" href="Bio Science Stream.html">📖Bio Science</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUniversities" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              🎓Higher Education Guide 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownUniversities">
+              <a class="dropdown-item" href="GUniversity.html">🎓Sri Lankan Goverment Universities</a>
+              <a class="dropdown-item" href="PUniversity.html">🎓Approved Private Universities</a>
+              <a class="dropdown-item" href="HND.html">🎓Higher National Diploma Course </a>
+              <a class="dropdown-item" href="NVQ.html">🎓NVQ  Level courses </a>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link find-degree-tab" href="Find Suitable Degree.html">FIND DEGREE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">📜About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  <div class="container">
+    
+    <h1>HND Courses in Sri Lanka</h1>
+
+    <h2>Government Institutions</h2>
+    <ul>
+        <li>
+            <strong>Sri Lanka Institute of Advanced Technological Education (SLIATE)</strong><br>
+            <p> Go to the institude Official Site >>><a href="http://www.sliate.ac.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> Engineering, IT, Business Management, Accountancy, Agriculture, etc.<br>
+            <em>Campuses:</em> Colombo, Kandy, Jaffna, Galle, etc. <br><br><br><br>
+            
+        </li>
+
+
+        <li>
+            <strong>University of Vocational Technology (UNIVOTEC)</strong><br>
+            <p> Go to the institude Official Site >>><a href="http://univotec.ac.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> Technical and vocational fields such as engineering, IT, and technology management.<br>
+            <em>Location:</em> Ratmalana<br><br><br><br>
+            
+        </li>
+
+
+        <li>
+            <strong>Open University of Sri Lanka (OUSL)</strong><br>
+            <p> Go to the institude Official Site >>><a href="https://ou.ac.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> Various HND programs in fields like engineering, management, and IT.<br>
+            <em>Location:</em> Nawala (Main Campus), with regional centers across the country.<br><br><br><br>
+        </li>
+        <li>
+            <strong>Sri Lankan State  Universities </strong><br>
+            <p> Go to the Government university page >>><a href="GUniversity.html" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p><br><br>
+           
+        </li>
+    </ul>
+
+    <h2>Private Institutions</h2>
+    <ul>
+        <li>
+            <strong>British College of Applied Studies (BCAS)</strong><br>
+            <p> Go to the institude Official Site >>><a href="https://bcas.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> HNDs in Business, Computing, Quantity Surveying, and Civil Engineering.<br>
+            <em>Location:</em> Colombo, Kandy, and other branches.<br><br>
+        </li>
+        <li>
+            <strong>Aquinas College of Higher Studies</strong><br>
+            <p> Go to the institude Official Site >>><a href="https://www.aquinas.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> HNDs in Business Management, IT, and Engineering.<br>
+            <em>Location:</em> Colombo<br><br>
+        </li>
+        <li>
+            <strong>ICBT Campus</strong><br>
+            <p> Go to the institude Official Site >>><a href="https://icbt.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> HNDs in Business, IT, Engineering, and Health Sciences.<br>
+            <em>Location:</em> Colombo, Kandy, Matara, Galle, and other branches.<br><br>
+        </li>
+        <li>
+            <strong>Sri Lanka Institute of Information Technology (SLIIT)</strong><br>
+            p> Go to the institude Official Site >>><a href="https://www.sliit.lk/" style="text-decoration: none;">
+              <button class="custom-button">CLICK</button> </a> </p>
+            <em>Courses Offered:</em> HNDs in IT, Business Management, Engineering, and more.<br>
+            <em>Location:</em> Malabe (Main Campus), with other regional campuses.<br><br>
+        </li>
+        <li>
+          <strong>Approved Private Universities </strong><br>
+          <p> Go to the private university page >>><a href="PUniversity.html" style="text-decoration: none;">
+            <button class="custom-button">CLICK</button> </a> </p><br><br>
+         
+      </li>
+       
+    </ul>
+
+    <h2>Key Points</h2>
+    <ul>
+        <li><strong>Duration:</strong> HND courses typically last 2 to 3 years.</li>
+        <li><strong>Progression:</strong> HND qualifications can often be used to gain entry into the third year of a degree program.</li>
+        <li><strong>Recognition:</strong> HNDs are widely recognized both locally and internationally, particularly in Commonwealth countries.</li>
+    </ul>
+  </div>
+
+   <script>
+        document.getElementById("show-more-btn").addEventListener("click", function() {
+            const hiddenRows = document.querySelectorAll(".hidden-row");
+            const showMoreBtn = document.getElementById("show-more-btn");
+            
+            hiddenRows.forEach(row => {
+                if (row.style.display === "none") {
+                    row.style.display = "table-row";
+                    showMoreBtn.textContent = "Show Less";
+                } else {
+                    row.style.display = "none";
+                    showMoreBtn.textContent = "Show More";
+                }
+            });
+        });
+    </script>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>Copyright © 2024 EducationPathway. All Rights Reserved.</p>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <p>For more information on education in Sri Lanka:</p>
+      <a href="http://www.moe.gov.lk" target="_blank">Sri Lanka Ministry of Education</a> |
+      <a href="https://www.ugc.ac.lk/" target="_blank">UNIVERSITY GRANTS COMMISSION</a>
+      <br>
+      <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="https://youtube.com/@educationpathwaya?si=nK1EJaBDXpSchIXS" class="fa fa-youtube"></a>
+    </div>
+    <br> 
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

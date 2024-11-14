@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="icon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Sri Lankan Government Universities and Courses</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  /* Custom CSS for Animation and Design */
+  .find-degree-tab {
+    background-color: #ff9800; /* Orange background */
+    color: #ffffff !important; /* White text */
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .find-degree-tab:hover {
+    background-color: #e68900; /* Darker orange on hover */
+    color: #fff !important;
+  }
+  body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #efe0f7, #000000, #a3a4a7, #67736f);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+  }
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    color: #761f35 !important;
+    font-weight: bold;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .navbar-nav .dropdown-item {
+    color: #8bd6e2 !important;
+  }
+
+  h1, h2 {
+    color: #020202;
+  }
+
+  h1 {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  </style>
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="IC.jpg" alt="Logo" loading="lazy" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">🏡Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownA/L Streams" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              📖A/L Streams
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownA/L Streams">
+              <a class="dropdown-item" href="Arts.html">📖Arts</a>
+              <a class="dropdown-item" href="commerce.html">📖Commerce</a>
+              <a class="dropdown-item" href="Bio System Technology.html">📖Bio System Technology</a>
+              <a class="dropdown-item" href="Engineering Technology.html">📖Engineering Technology</a>
+              <a class="dropdown-item" href="Physical Science Stream.html">📖Physical Science</a>
+              <a class="dropdown-item" href="Bio Science Stream.html">📖Bio Science</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUniversities" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              🎓Higher Education Guide 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownUniversities">
+              <a class="dropdown-item" href="GUniversity.html"> 🎓Sri Lankan Goverment Universities</a>
+              <a class="dropdown-item" href="PUniversity.html"> 🎓Approved Private Universities</a>
+              <a class="dropdown-item" href="HND.html"> 🎓Higher National Diploma Course </a>
+              <a class="dropdown-item" href="NVQ.html"> 🎓NVQ  Level courses </a>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link find-degree-tab" href="Find Suitable Degree.html">FIND DEGREE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">📜About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+   
+
+<div class="container">
+    <h1>Sri Lankan A/L Arts Stream</h1>
+    <h2>Subjects in the Arts Stream</h2>
+    <p>The Arts stream in Sri Lankan Advanced Level (A/L) offers a wide range of subjects that students can choose from. These subjects include:</p>
+    <h2>Basket 01 - Social Sciences / Applied Social Studies:</h2>
+<ol>
+    <li>Economics</li>
+    <li>Geography</li>
+    <li>History</li>
+    <li>Home Economics</li>
+    <li>Agricultural Science / Mathematics / Combined Mathematics</li>
+    <li>Communication & Media Studies</li>
+    <li>Information & Communication Technology</li>
+    <li>Accounting / Business Statistics</li>
+    <li>Political Science</li>
+    <li>Logic & Scientific Method</li>
+    <li>One subject from Technological Subjects:
+        <ul>
+            <li>Civil Technology</li>
+            <li>Electrical, Electronic and Information Technology</li>
+            <li>Agro Technology</li>
+            <li>Mechanical Technology</li>
+            <li>Food Technology</li>
+            <li>Bio-Resource Technology</li>
+        </ul>
+    </li>
+</ol>
+
+<h2>There are three exceptions to this rule:</h2>
+<ol>
+    <li>Students selecting three National Languages; Sinhala, Tamil, and English from Basket 04 (Language Basket) as the three subjects, need not select any subject from Basket 01.</li>
+    <li>Students selecting a combination of National and Classical languages need not select any subject from Basket 01.
+        <p>National Languages are:</p>
+        <ul>
+            <li>Sinhala</li>
+            <li>Tamil</li>
+            <li>English</li>
+        </ul>
+        <p>Classical Languages are:</p>
+        <ul>
+            <li>Arabic</li>
+            <li>Pali</li>
+            <li>Sanskrit</li>
+        </ul>
+        <p>For example, students can select three subjects like Sinhala, Pali, and Sanskrit, etc. These students need not select any subject from Basket 01. However, no candidate can select three classical languages as three subjects. They can select a maximum of two classical languages only.</p>
+    </li>
+    <li>Students selecting two languages from Basket 04 and the third subject from Religions and Civilizations or Aesthetic subject classified under Basket 02 and 03 given below need not select any subject from Basket 01.</li>
+</ol>
+
+<h2>Basket 02 - Religions and Civilizations:</h2>
+<ol>
+    <li>Buddhism</li>
+    <li>Hinduism</li>
+    <li>Christianity</li>
+    <li>Islam</li>
+    <li>Buddhist Civilization</li>
+    <li>Hindu Civilization</li>
+    <li>Christian Civilization</li>
+    <li>Islamic Civilization</li>
+    <li>Greek & Roman Civilization</li>
+</ol>
+
+<h3>Guidance for selection of subjects from Basket 02:</h3>
+<ul>
+    <li>A candidate can select a maximum of two subjects from Basket 02.</li>
+    <li>However, if a religion (e.g., Buddhism) is selected as a subject, the related civilization of the selected religion (e.g., Buddhist Civilization) cannot be offered as another subject from this basket.</li>
+</ul>
+
+<h2>Basket 03 - Aesthetic Studies:</h2>
+<p>Aesthetic subjects consist of four subject areas. These are:</p>
+<ol>
+    <li>Art</li>
+    <li>Dancing</li>
+    <li>Music</li>
+    <li>Drama & Theatre</li>
+</ol>
+
+<p>This can be further sub-classified as:</p>
+<ul>
+    <li>Art</li>
+    <li>Dancing
+        <ul>
+            <li>Sinhala</li>
+            <li>Baratha</li>
+        </ul>
+    </li>
+    <li>Music
+        <ul>
+            <li>Oriental</li>
+            <li>Carnatic</li>
+            <li>Western</li>
+        </ul>
+    </li>
+    <li>Drama & Theatre
+        <ul>
+            <li>Sinhala</li>
+            <li>Tamil</li>
+            <li>English</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Guidance for selection of subjects from Basket 03:</h3>
+<ul>
+    <li>Students can select two subjects out of the above four subject areas. However, no student is allowed to select two subjects from one subject area.</li>
+</ul>
+
+<h2>Basket 04 - Languages:</h2>
+<p>The language basket has three subject areas. These are:</p>
+<ul>
+    <li>National Languages</li>
+    <li>Classical Languages</li>
+    <li>Foreign Languages</li>
+</ul>
+
+<p>National Languages are:</p>
+<ul>
+    <li>Sinhala</li>
+    <li>Tamil</li>
+    <li>English</li>
+</ul>
+
+<p>Classical Languages are:</p>
+<ul>
+    <li>Arabic</li>
+    <li>Pali</li>
+    <li>Sanskrit</li>
+</ul>
+
+<p>Foreign Languages are:</p>
+<ul>
+    <li>Chinese</li>
+    <li>French</li>
+    <li>German</li>
+    <li>Hindi</li>
+    <li>Japanese</li>
+    <li>Malay</li>
+    <li>Russian</li>
+    <li>Korean</li>
+</ul>
+<h2>1. General Arts Programs</h2>
+<ul>
+    <li><strong>Arts</strong>
+        <ul>
+            <li>University of Colombo</li>
+            <li>University of Kelaniya</li>
+            <li>University of Sri Jayewardenepura</li>
+            <li>University of Ruhuna</li>
+            <li>University of Peradeniya</li>
+            <li>University of Jaffna</li>
+            <li>Eastern University, Sri Lanka</li>
+            <li>South Eastern University of Sri Lanka</li>
+            <li>Rajarata University of Sri Lanka</li>
+        </ul>
+    </li>
+    <li><strong>Arts (SP)</strong>
+        <ul>
+            <li>Sripalee Campus, University of Colombo (SP)</li>
+        </ul>
+    </li>
+    <li><strong>Arts (SAB)</strong>
+        <ul>
+            <li>Sabaragamuwa University of Sri Lanka</li>
+        </ul>
+    </li>
+    <li><strong>Communication Studies</strong>
+        <ul>
+            <li>Trincomalee Campus of the Eastern University, Sri Lanka</li>
+        </ul>
+    </li>
+    <li><strong>Peace and Conflict Resolution</strong>
+        <ul>
+            <li>University of Kelaniya</li>
+        </ul>
+    </li>
+    <li><strong>Islamic Studies</strong>
+        <ul>
+            <li>South Eastern University of Sri Lanka</li>
+        </ul>
+    </li>
+    <li><strong>Arabic Language</strong>
+        <ul>
+            <li>South Eastern University of Sri Lanka</li>
+        </ul>
+    </li>
+    <li><strong>Teaching English as a Second Language (TESL)</strong>
+        <ul>
+            <li>University of Kelaniya</li>
+            <li>University of Sri Jayewardenepura</li>
+        </ul>
+    </li>
+    <li><strong>Social Work</strong>
+        <ul>
+            <li>University of Peradeniya</li>
+            <li>University of Sri Jayewardenepura</li>
+        </ul>
+    </li>
+    <li><strong>Arts - Information Technology</strong>
+        <ul>
+            <li>University of Sri Jayewardenepura</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>2. Specialized Arts Programs</h2>
+<ul>
+    <li><strong>Music</strong>
+        <ul>
+            <li>University of Sri Jayewardenepura</li>
+            <li>University of Jaffna</li>
+            <li>University of the Visual & Performing Arts</li>
+            <li>Swami Vipulananda Institute of Aesthetic Studies</li>
+        </ul>
+    </li>
+    <li><strong>Dance</strong>
+        <ul>
+            <li>University of Jaffna</li>
+            <li>University of the Visual & Performing Arts</li>
+            <li>Swami Vipulananda Institute of Aesthetic Studies</li>
+        </ul>
+    </li>
+    <li><strong>Drama & Theatre</strong>
+        <ul>
+            <li>University of the Visual & Performing Arts</li>
+            <li>Swami Vipulananda Institute of Aesthetic Studies</li>
+        </ul>
+    </li>
+    <li><strong>Visual Arts</strong>
+        <ul>
+            <li>University of the Visual & Performing Arts</li>
+        </ul>
+    </li>
+    <li><strong>Visual & Technological Arts</strong>
+        <ul>
+            <li>Swami Vipulananda Institute of Aesthetic Studies</li>
+        </ul>
+    </li>
+    <li><strong>Art & Design</strong>
+        <ul>
+            <li>University of Jaffna</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Admission and Academic Focus</h2>
+<p>
+    Admission to the programs listed above is typically based on an All-Island Merit basis, meaning that students are selected based on their academic performance and examination results. The Arts stream is designed to provide students with a well-rounded education, promoting critical thinking, cultural awareness, and effective communication skills.
+</p>
+<p>
+    By choosing from a variety of programs and specializations, students can tailor their education to their interests and career goals, whether in the traditional arts, media, social sciences, or specialized creative fields.
+</p>
+
+</div>
+
+
+<footer>
+    <div class="container footer-content">
+      <p>Copyright © 2024 EducationPathway. All Rights Reserved.</p>
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <p>For more information on education in Sri Lanka:</p>
+      <a href="http://www.moe.gov.lk" target="_blank">Sri Lanka Ministry of Education</a> |
+      <a href="https://www.ugc.ac.lk/" target="_blank">UNIVERSITY GRANTS COMMISSION</a>
+      <br>
+      <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="https://youtube.com/@educationpathwaya?si=nK1EJaBDXpSchIXS" class="fa fa-youtube"></a>
+    </div>
+    <br> 
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
